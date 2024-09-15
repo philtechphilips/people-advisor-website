@@ -8,9 +8,9 @@
     <title>People Advisor - General Consulting Company </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}">
-    <link rel="icon" href="{{ asset('images/notary-logo.png') }}">
+    <link rel="icon" href="{{ asset('images/logo.svg') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/app-ed9e150d.css') }}">
     @vite('resources/css/app.css')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -24,9 +24,7 @@
 </head>
 
 
-<body>
-    @include('includes.navbar')
-
+<body >
     @yield('content')
 
     @include('includes.cta')
@@ -59,14 +57,22 @@
     </script>
     {{-- Swiper JS --}}
 
-    {{-- Service Dropdown --}}
+    {{-- Buttons --}}
     <script>
-        const toggleDropdown = () => {
-            const dropdown = document.getElementById("service_dropdown");
-            dropdown.classList.toggle("service-hidden");
-        }
+        const button = document.querySelector('.button');
+        const icon = document.querySelector('.icon');
+
+        button.addEventListener('mouseenter', function() {
+            icon.classList.remove('ri-arrow-right-up-line');
+            icon.classList.add('ri-arrow-right-line');
+        });
+
+        button.addEventListener('mouseleave', function() {
+            icon.classList.remove('ri-arrow-right-line');
+            icon.classList.add('ri-arrow-right-up-line');
+        });
     </script>
-    {{-- Service Dropdown --}}
+    {{-- Buttons --}}
 
     {{-- Toggle Mobile Navigation  --}}
     <script>

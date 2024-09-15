@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.marquee-2 {
+    display: flex;
+    animation: right 15s linear infinite;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 24px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Scroll exactly half the width */
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(-50%); /* Start halfway left */
+    }
+    100% {
+        transform: translateX(0); /* Move content to the right */
+    }
+}
+
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.icon-container {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #191b1f;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover .icon-container {
+    background-color: #075097;
+    transition: background-color 0.3s ease;
+}
