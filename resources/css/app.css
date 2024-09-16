@@ -77,3 +77,18 @@
 }
 
 
+.faq-content {
+    display: none;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-item.open .faq-content {
+    display: block;
+    max-height: 1000px; /* Adjust if needed */
+}
+
+.arrow-container {
+    transition: transform 0.3s ease;
+}
+
+

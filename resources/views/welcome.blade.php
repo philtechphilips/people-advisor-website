@@ -394,7 +394,7 @@
     </section>
 
     <section class="md:px-24 px-5  py-28">
-        <div class="flex md:flex-row flex-col mt-6 items-center justify-between">
+        <div class="flex md:flex-row flex-col mt-6 items-center justify-between md:mb-20 mb-16">
             <h1
                 class="2xl:text-5xl text-center md:text-left md:text-[42px] text-2xl text-[#191B1F] font-semibold md:leading-[50px] 2xl:leading-[60px]">
                 Frequently asked questions
@@ -409,11 +409,82 @@
             </a>
         </div>
 
+        <div class="faq-container">
+            <div class="faq-item border border-[#C3C4CB] md:px-10 px-6 py-4 rounded-2xl" data-faq="1">
+                <div class="flex justify-between items-center cursor-pointer">
+                    <h1 class="text-[#272A30] md:text-xl font-bold">What services does your company offer?</h1>
+                    <div class="arrow-container bg-[#E6E6E699] rounded-lg p-2 w-10 h-10 flex items-center justify-center">
+                        <i class="ri-arrow-down-s-line text-2xl"></i>
+                    </div>
+                </div>
+                <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
+                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
+                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
+                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                </div>
+            </div>
 
+            <div class="faq-item border border-[#C3C4CB] md:px-10 px-6 py-4 mt-6 rounded-2xl" data-faq="2">
+                <div class="flex justify-between items-center cursor-pointer">
+                    <h1 class="text-[#272A30] font-bold md:text-xl">What makes your company unique?</h1>
+                    <div class="arrow-container bg-[#E6E6E699] rounded-lg p-2 w-10 h-10 flex items-center justify-center">
+                        <i class="ri-arrow-down-s-line text-2xl"></i>
+                    </div>
+                </div>
+                <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
+                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
+                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
+                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-[#C3C4CB] md:px-10 px-6 py-4 mt-6 rounded-2xl" data-faq="2">
+                <div class="flex justify-between items-center cursor-pointer">
+                    <h1 class="text-[#272A30 font-bold md:text-xl">How do I get started with your consulting services?</h1>
+                    <div class="arrow-container bg-[#E6E6E699] rounded-lg p-2 w-10 h-10 flex items-center justify-center">
+                        <i class="ri-arrow-down-s-line text-2xl"></i>
+                    </div>
+                </div>
+                <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
+                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
+                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
+                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-[#C3C4CB] md:px-10 px-6 py-4 mt-6 rounded-2xl" data-faq="2">
+                <div class="flex justify-between items-center cursor-pointer">
+                    <h1 class="text-[#272A30 font-bold md:text-xl">What is the typical engagement process like?</h1>
+                    <div class="arrow-container bg-[#E6E6E699] rounded-lg p-2 w-10 h-10 flex items-center justify-center">
+                        <i class="ri-arrow-down-s-line text-2xl"></i>
+                    </div>
+                </div>
+                <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
+                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
+                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
+                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-[#C3C4CB] md:px-10 px-6 py-4 mt-6 rounded-2xl" data-faq="2">
+                <div class="flex justify-between items-center cursor-pointer">
+                    <h1 class="text-[#272A30]  font-bold md:text-xl pr-5">How do you charge for your services?</h1>
+                    <div class="arrow-container bg-[#E6E6E699] rounded-lg p-2 w-10 h-10 flex items-center justify-center">
+                        <i class="ri-arrow-down-s-line text-2xl"></i>
+                    </div>
+                </div>
+                <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
+                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
+                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
+                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                </div>
+            </div>
         </div>
+
     </section>
 
-    <section class="md:px-24  px-5 py-28 mb-28" style="background: url('{{ asset('images/home-contact-bg.png') }}'); background-repeat: no-repeat; background-size: cover;">
+    <section class="md:px-24  px-5 py-28 mb-28"
+        style="background: url('{{ asset('images/home-contact-bg.png') }}'); background-repeat: no-repeat; background-size: cover;">
         <div class="md:w-[600px] flex flex-col items-center justify-center md:items-start md:justify-start text-white">
             <h1 class="md:text-5xl text-3xl md:text-left text-center font-bold md:leading-[60px]">Ready to take your
                 business to the next level?</h1>
@@ -434,20 +505,24 @@
     <section class="md:px-24 px-5 mb-10 relative">
         <div class="hidden md:block rounded-[32px] p-16 w-full h-[400px]"
             style="background: url('{{ asset('images/bg-conta.png') }}') no-repeat center center / contain;">
-            <h1 class="text-white text-6xl pr-20 pt-10 font-semibold leading-[70px]">Ready to navigate challenges and capitalize on opportunities</h1>
+            <h1 class="text-white text-6xl pr-20 pt-10 font-semibold leading-[70px]">Ready to navigate challenges and
+                capitalize on opportunities</h1>
             <p class="text-[#F7F7F7] pt-5 text-xl">Partner with us today to achieve your business goals effectively</p>
-    
-            <div class="bg-[#075097] w-fit absolute 2xl:bottom-[28px] 2xl:right-[130px]  md:bottom-[54px] md:right-[100px] text-white px-5 py-3 rounded-[32px]">
+
+            <div
+                class="bg-[#075097] w-fit absolute 2xl:bottom-[28px] 2xl:right-[130px]  md:bottom-[54px] md:right-[100px] text-white px-5 py-3 rounded-[32px]">
                 <a href="#" class="text-lg font-medium">Consult us now</a>
             </div>
         </div>
     </section>
-    
+
     <section class="bg-gray-50 md:hidden px-5 py-20 mb-28 block">
         <div class="rounded-[32px] w-full  flex flex-col items-center justify-center">
-            <h1 class="text-3xl font-bold text-center leading-[40px]">Ready to navigate challenges and capitalize on opportunities</h1>
-            <p class="pt-5 text-[#7c7c7c] text-lg text-center">Partner with us today to achieve your business goals effectively</p>
-    
+            <h1 class="text-3xl font-bold text-center leading-[40px]">Ready to navigate challenges and capitalize on
+                opportunities</h1>
+            <p class="pt-5 text-[#7c7c7c] text-lg text-center">Partner with us today to achieve your business goals
+                effectively</p>
+
             <div class="bg-[#075097] mt-8 w-fit text-white px-5 py-3 rounded-[32px]">
                 <a href="#" class="text-lg font-medium">Consult us now</a>
             </div>
@@ -494,6 +569,46 @@
                 arrowIcon.classList.remove('ri-arrow-right-line');
                 arrowIcon.classList.add('ri-arrow-right-up-line');
             });
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const header = item.querySelector('.flex');
+                const content = item.querySelector('.faq-content');
+                const arrow = item.querySelector('.arrow-container i');
+
+                header.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('open');
+                    closeAllFaqItems(); // Close all other items
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        arrow.classList.replace('ri-arrow-down-s-line', 'ri-arrow-right-s-line');
+                    } else {
+                        item.classList.remove('open');
+                        arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
+                    }
+                });
+
+                item.addEventListener('mouseleave', () => {
+                    if (item.classList.contains('open')) {
+                        item.classList.remove('open');
+                        arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
+                    }
+                });
+            });
+
+            function closeAllFaqItems() {
+                faqItems.forEach(item => {
+                    item.classList.remove('open');
+                    const arrow = item.querySelector('.arrow-container i');
+                    arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
+                });
+            }
         });
     </script>
 @endsection
