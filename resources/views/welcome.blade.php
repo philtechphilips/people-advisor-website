@@ -1,14 +1,14 @@
 @extends('layout.app')
 
 @section('content')
-    <section class="w-full h-[800px]  relative overflow-hidden">
+    <section class="w-full md:h-[800px] h-[700px]  relative overflow-hidden">
         @include('includes.navbar')
 
         <div class="absolute inset-0 bg-cover bg-center z-0"
             style="background-image: url('{{ asset('images/peoples-advisor-hero-bg.png') }}'); filter: blur(20px);">
         </div>
 
-        <div class="relative z-10 flex flex-col items-center justify-center  h-[700px]">
+        <div class="relative z-10 flex flex-col items-center justify-center  md:h-[700px] h-[500px]">
             <h1 class="md:text-[80px] text-4xl md:leading-[90px] pb-1 text-center md:font-semibold font-bold"
                 style="
         background: linear-gradient(102.69deg, #F5F5F5 -55.44%, #94ACC4 -0.54%, #075097 108.46%);
