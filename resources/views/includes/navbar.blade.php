@@ -1,25 +1,25 @@
 <nav class="relative z-10 flex items-center justify-between py-7 md:px-24 px-5">
     <img src="{{ asset('images/people-advisor.svg') }}" alt="">
 
-    <ul class="md:flex hidden items-center gap-7 text-[#191B1F] text-lg font-medium bg-white py-3 px-4 rounded-[32px]">
-        <li class="border-[1.5px] rounded-[32px] px-6 border-[#C3C4CB] py-1">
-            <a href="">Home</a>
+    <ul style="box-shadow: -4px 4px 6px 0px #C6C6C64D;" class="md:flex hidden items-center gap-7 text-[#191B1F] text-lg font-medium bg-white py-3 px-6 rounded-[32px]">
+        <li class="menu-item">
+            <a href="/">Home</a>
         </li>
 
-        <li>
-            <a href="">Service</a>
+        <li class="menu-item">
+            <a href="/services">Service</a>
         </li>
 
-        <li>
-            <a href="">About us</a>
+        <li class="menu-item">
+            <a href="/about-us">About us</a>
         </li>
 
-        <li>
-            <a href="">FAQs</a>
+        <li class="menu-item">
+            <a href="/faqs">FAQs</a>
         </li>
     </ul>
 
-    <a href="" class="bg-[#075097] hidden md:block text-white rounded-[32px] py-2 px-6">Consult us</a>
+    <a href="/contact-us" class="bg-[#075097] hidden md:block text-white rounded-[32px] py-2 px-6">Consult us</a>
     <i class="ri-menu-2-line text-[28px] flex md:hidden menuButton"></i>
 </nav>
 

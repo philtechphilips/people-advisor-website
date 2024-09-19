@@ -539,42 +539,4 @@
     </script>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const faqItems = document.querySelectorAll('.faq-item');
-
-            faqItems.forEach(item => {
-                const header = item.querySelector('.flex');
-                const content = item.querySelector('.faq-content');
-                const arrow = item.querySelector('.arrow-container i');
-
-                header.addEventListener('click', () => {
-                    const isOpen = item.classList.contains('open');
-                    closeAllFaqItems(); // Close all other items
-                    if (!isOpen) {
-                        item.classList.add('open');
-                        arrow.classList.replace('ri-arrow-down-s-line', 'ri-arrow-right-s-line');
-                    } else {
-                        item.classList.remove('open');
-                        arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
-                    }
-                });
-
-                item.addEventListener('mouseleave', () => {
-                    if (item.classList.contains('open')) {
-                        item.classList.remove('open');
-                        arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
-                    }
-                });
-            });
-
-            function closeAllFaqItems() {
-                faqItems.forEach(item => {
-                    item.classList.remove('open');
-                    const arrow = item.querySelector('.arrow-container i');
-                    arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
-                });
-            }
-        });
-    </script>
 @endsection

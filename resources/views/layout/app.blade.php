@@ -95,16 +95,60 @@
 
 
     <!-- Accordion Script -->
+    
     <script>
-        const accordions = document.getElementsByClassName("accordion");
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
 
-        for (let i = 0; i < accordions.length; i++) {
-            accordions[i].addEventListener("click", function() {
-                this.classList.toggle("active");
+            faqItems.forEach(item => {
+                const header = item.querySelector('.flex');
+                const content = item.querySelector('.faq-content');
+                const arrow = item.querySelector('.arrow-container i');
+
+                header.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('open');
+                    closeAllFaqItems(); // Close all other items
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        arrow.classList.replace('ri-arrow-down-s-line', 'ri-arrow-right-s-line');
+                    } else {
+                        item.classList.remove('open');
+                        arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
+                    }
+                });
+
+                item.addEventListener('mouseleave', () => {
+                    if (item.classList.contains('open')) {
+                        item.classList.remove('open');
+                        arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
+                    }
+                });
             });
-        }
+
+            function closeAllFaqItems() {
+                faqItems.forEach(item => {
+                    item.classList.remove('open');
+                    const arrow = item.querySelector('.arrow-container i');
+                    arrow.classList.replace('ri-arrow-right-s-line', 'ri-arrow-down-s-line');
+                });
+            }
+        });
     </script>
     <!-- Accordion script Ends Here -->
+
+
+
+<script>
+    const currentPath = window.location.pathname;
+
+    document.querySelectorAll('.menu-item').forEach((item) => {
+        const link = item.querySelector('a');
+
+        if (link.getAttribute('href') === currentPath) {
+            item.classList.add('border-[1.5px]', 'rounded-[32px]', 'px-6', 'border-[#C3C4CB]', 'py-1');
+        }
+    });
+</script>
 
     @yield('script')
 </body>
