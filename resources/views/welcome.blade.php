@@ -393,7 +393,13 @@
         </div>
     </section>
 
-    <section class="md:px-24 px-5  py-28">
+
+    {{-- CTA --}}
+    @include('includes.cta')
+    {{-- CTA --}}
+
+
+    <section class="md:px-24 px-5  pb-28">
         <div class="flex md:flex-row flex-col mt-6 items-center justify-between md:mb-20 mb-16">
             <h1
                 class="2xl:text-5xl text-center md:text-left md:text-[42px] text-2xl text-[#191B1F] font-semibold md:leading-[50px] 2xl:leading-[60px]">
@@ -483,51 +489,11 @@
 
     </section>
 
-    <section class="md:px-24  px-5 py-28 mb-28"
-        style="background: url('{{ asset('images/home-contact-bg.png') }}'); background-repeat: no-repeat; background-size: cover;">
-        <div class="md:w-[600px] flex flex-col items-center justify-center md:items-start md:justify-start text-white">
-            <h1 class="md:text-5xl text-3xl md:text-left text-center font-bold md:leading-[60px]">Ready to take your
-                business to the next level?</h1>
-            <p class="mt-4 mb-12 md:text-left text-center">Contact us to learn how our expert advisory services can help
-                you achieve your goals. Explore new growth opportunities, People Advisor is here to guide you every step of
-                the way.</p>
+    {{-- Testiomonial --}}
+    @include('includes.testimonial')
+    {{-- Testiomonial --}}
 
-            <a href="#"
-                class="text-white bg-[#075097] md:mt-0 hover:bg-[#191B1F] rounded-[32px] gap-6 flex items-center px-6 pr-4 py-2 w-fit button">
-                <p class="text-lg">Send us a message</p>
-                <div class="icon-container rounded-full w-10 h-10 flex items-center justify-center">
-                    <i class="ri-arrow-right-up-line text-2xl icon"></i>
-                </div>
-            </a>
-        </div>
-    </section>
 
-    <section class="md:px-24 px-5 mb-10 relative">
-        <div class="hidden md:block rounded-[32px] p-16 w-full h-[400px]"
-            style="background: url('{{ asset('images/bg-conta.png') }}') no-repeat center center / contain;">
-            <h1 class="text-white text-6xl pr-20 pt-10 font-semibold leading-[70px]">Ready to navigate challenges and
-                capitalize on opportunities</h1>
-            <p class="text-[#F7F7F7] pt-5 text-xl">Partner with us today to achieve your business goals effectively</p>
-
-            <div
-                class="bg-[#075097] w-fit absolute 2xl:bottom-[28px] 2xl:right-[130px]  md:bottom-[54px] md:right-[100px] text-white px-5 py-3 rounded-[32px]">
-                <a href="#" class="text-lg font-medium">Consult us now</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-gray-50 md:hidden px-5 py-20 mb-28 block">
-        <div class="rounded-[32px] w-full  flex flex-col items-center justify-center">
-            <h1 class="text-3xl font-bold text-center leading-[40px]">Ready to navigate challenges and capitalize on
-                opportunities</h1>
-            <p class="pt-5 text-[#7c7c7c] text-lg text-center">Partner with us today to achieve your business goals
-                effectively</p>
-
-            <div class="bg-[#075097] mt-8 w-fit text-white px-5 py-3 rounded-[32px]">
-                <a href="#" class="text-lg font-medium">Consult us now</a>
-            </div>
-        </div>
-    </section>
 @endsection
 
 @section('script')

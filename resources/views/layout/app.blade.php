@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}"> --}}
     <link rel="icon" href="{{ asset('images/logo.svg') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/app-ed9e150d.css') }}">
     @vite('resources/css/app.css')
@@ -24,10 +24,8 @@
 </head>
 
 
-<body >
+<body>
     @yield('content')
-
-    @include('includes.cta')
 
     @include('includes.footer')
 
@@ -37,13 +35,16 @@
     {{-- Swiper JS --}}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swipers = new Swiper('.swiper-2', {
+        const swipers = new Swiper('.swiper', {
             direction: 'horizontal',
             loop: true,
             slidesPerView: 1,
             navigation: {
-                nextEl: '.swiper-button-next-mod-1',
-                prevEl: '.swiper-button-prev-mod-1',
+                nextEl: '.swiper-button-next-1',
+                prevEl: '.swiper-button-prev-1',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
             },
             breakpoints: {
                 300: {
@@ -59,19 +60,24 @@
 
     {{-- Buttons --}}
     <script>
-        const button = document.querySelector('.button');
-        const icon = document.querySelector('.icon');
-
-        button.addEventListener('mouseenter', function() {
-            icon.classList.remove('ri-arrow-right-up-line');
-            icon.classList.add('ri-arrow-right-line');
-        });
-
-        button.addEventListener('mouseleave', function() {
-            icon.classList.remove('ri-arrow-right-line');
-            icon.classList.add('ri-arrow-right-up-line');
+        const buttons = document.querySelectorAll('.button');
+        const icons = document.querySelectorAll('.icon');
+    
+        buttons.forEach((button, index) => {
+            const icon = icons[index]; 
+    
+            button.addEventListener('mouseenter', function() {
+                icon.classList.remove('ri-arrow-right-up-line');
+                icon.classList.add('ri-arrow-right-line');
+            });
+    
+            button.addEventListener('mouseleave', function() {
+                icon.classList.remove('ri-arrow-right-line');
+                icon.classList.add('ri-arrow-right-up-line');
+            });
         });
     </script>
+    
     {{-- Buttons --}}
 
     {{-- Toggle Mobile Navigation  --}}
