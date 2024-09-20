@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SendMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,5 @@ Route::get('/faqs', function () {
 Route::get('/contact-us', function () {
     return view('contact');
 });
+
+Route::post('/send-a-message', [SendMail::class, 'sendMessage']);

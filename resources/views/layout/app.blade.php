@@ -57,30 +57,30 @@
                 }
             },
             on: {
-            init: function () {
-                updateButtonState(this); // Update button state on init
-            },
-            slideChange: function () {
-                updateButtonState(this); // Update button state on slide change
+                init: function() {
+                    updateButtonState(this); // Update button state on init
+                },
+                slideChange: function() {
+                    updateButtonState(this); // Update button state on slide change
+                }
             }
-        }
         });
 
         function updateButtonState(swiper) {
-        // Remove the active class from both buttons
-        document.querySelector('.swiper-button-prev-1').classList.remove('swiper-button-active');
-        document.querySelector('.swiper-button-next-1').classList.remove('swiper-button-active');
+            // Remove the active class from both buttons
+            document.querySelector('.swiper-button-prev-1').classList.remove('swiper-button-active');
+            document.querySelector('.swiper-button-next-1').classList.remove('swiper-button-active');
 
-        // Add active class to next or prev buttons based on the active index
-        if (swiper.isBeginning) {
-            document.querySelector('.swiper-button-prev-1').classList.add('swiper-button-active');
-        } else if (swiper.isEnd) {
-            document.querySelector('.swiper-button-next-1').classList.add('swiper-button-active');
-        } else {
-            document.querySelector('.swiper-button-prev-1').classList.add('swiper-button-active');
-            document.querySelector('.swiper-button-next-1').classList.add('swiper-button-active');
+            // Add active class to next or prev buttons based on the active index
+            if (swiper.isBeginning) {
+                document.querySelector('.swiper-button-prev-1').classList.add('swiper-button-active');
+            } else if (swiper.isEnd) {
+                document.querySelector('.swiper-button-next-1').classList.add('swiper-button-active');
+            } else {
+                document.querySelector('.swiper-button-prev-1').classList.add('swiper-button-active');
+                document.querySelector('.swiper-button-next-1').classList.add('swiper-button-active');
+            }
         }
-    }
     </script>
     {{-- Swiper JS --}}
 
@@ -88,22 +88,22 @@
     <script>
         const buttons = document.querySelectorAll('.button');
         const icons = document.querySelectorAll('.icon');
-    
+
         buttons.forEach((button, index) => {
-            const icon = icons[index]; 
-    
+            const icon = icons[index];
+
             button.addEventListener('mouseenter', function() {
                 icon.classList.remove('ri-arrow-right-up-line');
                 icon.classList.add('ri-arrow-right-line');
             });
-    
+
             button.addEventListener('mouseleave', function() {
                 icon.classList.remove('ri-arrow-right-line');
                 icon.classList.add('ri-arrow-right-up-line');
             });
         });
     </script>
-    
+
     {{-- Buttons --}}
 
     {{-- Toggle Mobile Navigation  --}}
@@ -119,9 +119,7 @@
     </script>
     {{-- Toggle Mobile Navigation --}}
 
-
     <!-- Accordion Script -->
-    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const faqItems = document.querySelectorAll('.faq-item');
@@ -162,21 +160,22 @@
     </script>
     <!-- Accordion script Ends Here -->
 
+    <script>
+        const currentPath = window.location.pathname;
 
+        document.querySelectorAll('.menu-item').forEach((item) => {
+            const link = item.querySelector('a');
 
-<script>
-    const currentPath = window.location.pathname;
+            if (link.getAttribute('href') === currentPath) {
+                item.classList.add('border-[1.5px]', 'rounded-[32px]', 'px-6', 'border-[#C3C4CB]', 'py-1');
+            }
+        });
+    </script>
 
-    document.querySelectorAll('.menu-item').forEach((item) => {
-        const link = item.querySelector('a');
-
-        if (link.getAttribute('href') === currentPath) {
-            item.classList.add('border-[1.5px]', 'rounded-[32px]', 'px-6', 'border-[#C3C4CB]', 'py-1');
-        }
-    });
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     @yield('script')
+
 </body>
 
 </html>

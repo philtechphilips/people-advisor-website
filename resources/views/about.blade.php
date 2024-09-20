@@ -25,10 +25,11 @@
     </section>
 
     <section class="md:px-24 px-5 md:py-24 pt-24">
-        <div class="flex md:flex-row flex-col justify-between">
-            <div class="md:w-[470px]">
-                <h4 class="font-bold text-4xl">About us</h4>
-                <p class="text-[#545861] font-medium pt-3 pb-8">At People Advisor, we are a general consulting company based
+        <div class="flex md:flex-row flex-col  justify-between">
+            <div class="md:w-[470px] flex flex-col items-center justify-center md:items-start md:justify-start">
+                <h4 class="font-bold text-4xl md:text-left text-center">About us</h4>
+                <p class="text-[#545861] font-medium pt-3 pb-8 md:text-left text-center">At People Advisor, we are a general
+                    consulting company based
                     in Nigeria, dedicated to offering comprehensive advisory services across Human Resources, Social Media,
                     Product Development, Accounting, and Growth.
                     We play a vital role in providing expert guidance and support to businesses at various stages of their
@@ -47,42 +48,43 @@
 
             <div class="flex flex-wrap mt-20 md:mt-0 md:w-1/2 gap-10">
                 <div class="md:w-[45%]">
-                    <div class="my-5 border w-[90%] border-[#C3C4CB]"></div>
+                    <div class="my-5 border md:w-[90%] border-[#C3C4CB]"></div>
                     <h4 style="background: linear-gradient(102.69deg, #F5F5F5 -55.44%, #94ACC4 -0.54%, #075097 108.46%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                        class="font-bold text-2xl w-fit mb-4">Our Mission</h4>
-                    <p class="text-[#545861] font-medium">To offer affordable consulting that fosters growth, inclusivity,
+                        class="font-bold text-2xl md:w-fit mb-4 text-center md:text-left">Our Mission</h4>
+                    <p class="text-[#545861] font-medium text-center md:text-left">To offer affordable consulting that
+                        fosters growth, inclusivity,
                         and fair work opportunities</p>
                 </div>
 
                 <div class="md:w-[45%]">
-                    <div class="my-5 border w-[90%] border-[#C3C4CB]"></div>
+                    <div class="my-5 border md:w-[90%] border-[#C3C4CB]"></div>
                     <h4 style="background: linear-gradient(102.69deg, #F5F5F5 -55.44%, #94ACC4 -0.54%, #075097 108.46%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                        class="font-bold text-2xl w-fit mb-4">Our Vision</h4>
-                    <p class="text-[#545861] font-medium">
+                        class="font-bold text-2xl md:w-fit mb-4 text-center md:text-left">Our Vision</h4>
+                    <p class="text-[#545861] font-medium text-center md:text-left">
                         To lead in providing accessible expertise that drives sustainable progress and decent work for all
                     </p>
                 </div>
 
                 <div class="md:w-[45%]">
-                    <div class="my-5 border w-[90%] border-[#C3C4CB]"></div>
+                    <div class="my-5 border md:w-[90%] border-[#C3C4CB]"></div>
                     <h4 style="background: linear-gradient(102.69deg, #F5F5F5 -55.44%, #94ACC4 -0.54%, #075097 108.46%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                        class="font-bold text-2xl w-fit mb-4">
+                        class="font-bold text-2xl md:w-fit mb-4 text-center md:text-left">
                         Our Approach
                     </h4>
-                    <p class="text-[#545861] font-medium">
+                    <p class="text-[#545861] font-medium text-center md:text-left">
                         At People Advisor, we prioritize a client-centric approach, working closely with businesses to
                         understand their unique needs and challenges
                     </p>
                 </div>
 
                 <div class="md:w-[45%]">
-                    <div class="my-5 border w-[90%] border-[#C3C4CB]"></div>
+                    <div class="my-5 border md:w-[90%] border-[#C3C4CB]"></div>
                     <h4 style="background: linear-gradient(102.69deg, #F5F5F5 -55.44%, #94ACC4 -0.54%, #075097 108.46%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                        class="font-bold text-2xl w-fit mb-4">
+                        class="font-bold text-2xl md:w-fit mb-4 text-center md:text-left">
                         Why Choose Us?
                     </h4>
 
-                    <p class="text-[#545861] font-medium">
+                    <p class="text-[#545861] font-medium text-center md:text-left">
                         We stand out as a trusted partner for businesses seeking to optimize their processes, enhance
                         performance, and drive sustainable growth
                     </p>
