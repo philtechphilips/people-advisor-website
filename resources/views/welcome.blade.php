@@ -515,9 +515,9 @@
                 img.src = `${imgFolder}/Name=0${imgIndex}.png`;
 
                 img.style.opacity = 0.1;
-            }, 1000);
+            }, 5000);
         }
-        setInterval(animateImage, 2000);
+        setInterval(animateImage, 6000);
     </script>
 
     <script>

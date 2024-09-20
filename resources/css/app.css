@@ -92,3 +92,12 @@
 }
 
 
+.swiper-button-prev-1, .swiper-button-next-1 {
+    background-color: rgba(109, 179, 248, 1); 
+}
+
+.swiper-button-prev-1.swiper-button-active, 
+.swiper-button-next-1.swiper-button-active {
+    background-color: #075097; 
+}
+

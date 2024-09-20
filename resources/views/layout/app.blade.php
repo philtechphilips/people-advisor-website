@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>People Advisor - General Consulting Company </title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> --}}
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}">
     <link rel="icon" href="{{ asset('images/logo.svg') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/app-ed9e150d.css') }}">
     @vite('resources/css/app.css')
@@ -49,12 +49,38 @@
             breakpoints: {
                 300: {
                     slidesPerView: 1,
+                    spaceBetween: 20,
                 },
                 640: {
-                    slidesPerView: 3
+                    slidesPerView: 3,
+                    spaceBetween: 20,
                 }
+            },
+            on: {
+            init: function () {
+                updateButtonState(this); // Update button state on init
+            },
+            slideChange: function () {
+                updateButtonState(this); // Update button state on slide change
             }
+        }
         });
+
+        function updateButtonState(swiper) {
+        // Remove the active class from both buttons
+        document.querySelector('.swiper-button-prev-1').classList.remove('swiper-button-active');
+        document.querySelector('.swiper-button-next-1').classList.remove('swiper-button-active');
+
+        // Add active class to next or prev buttons based on the active index
+        if (swiper.isBeginning) {
+            document.querySelector('.swiper-button-prev-1').classList.add('swiper-button-active');
+        } else if (swiper.isEnd) {
+            document.querySelector('.swiper-button-next-1').classList.add('swiper-button-active');
+        } else {
+            document.querySelector('.swiper-button-prev-1').classList.add('swiper-button-active');
+            document.querySelector('.swiper-button-next-1').classList.add('swiper-button-active');
+        }
+    }
     </script>
     {{-- Swiper JS --}}
 

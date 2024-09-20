@@ -1,7 +1,7 @@
 <section class="md:px-24 px-5 mb-10">
     <h1 class="text-center font-bold text-5xl">See why our clients trust us</h1>
     <div class="swiper">
-        <div class="flex swiper-wrapper justify-between mt-16 md:gap-6">
+        <div class="flex swiper-wrapper justify-between mt-16">
 
             <div
                 class="md:w-[373px] 2xl:w-[400px] md:h-[380px] border border-[#54586180] rounded-[32px] py-10 px-6 swiper-slide">
@@ -71,6 +71,45 @@
                 <h6 class="text-[#191B1F] font-bold">Tunde Oladimeji</h6>
                 <p class="text-[#7C7C7C]">CEO of A1 Pinnacle Apartment</p>
             </div>
+
+
+            <div
+                class="md:w-[373px] 2xl:w-[400px] md:h-[380px] border border-[#54586180] rounded-[32px] py-10 px-6 swiper-slide">
+                <h4 class="w-fit text-xl font-bold"
+                    style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">
+                    “Transformational HR Solutions”</h4>
+                <p class="text-[#7C7C7C] mt-2 mb-4">Partnering with People Advisor has been a game-changer for our
+                    company.
+                    Their HR consulting services have streamlined our payroll management and enhanced our employee
+                    engagement strategies. Their team is knowledgeable, responsive, and truly understands our business
+                    needs
+                </p>
+
+                <h6 class="text-[#191B1F] font-bold">Tunde Oladimeji</h6>
+                <p class="text-[#7C7C7C]">CEO of A1 Pinnacle Apartment</p>
+            </div>
+
+
+            <div
+                class="md:w-[373px] 2xl:w-[400px] md:h-[380px] border border-[#54586180] rounded-[32px] py-10 px-6 swiper-slide">
+                <h4 class="w-fit text-xl font-bold"
+                    style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">
+                    “Transformational HR Solutions”</h4>
+                <p class="text-[#7C7C7C] mt-2 mb-4">Partnering with People Advisor has been a game-changer for our
+                    company.
+                    Their HR consulting services have streamlined our payroll management and enhanced our employee
+                    engagement strategies. Their team is knowledgeable, responsive, and truly understands our business
+                    needs
+                </p>
+
+                <h6 class="text-[#191B1F] font-bold">Tunde Oladimeji</h6>
+                <p class="text-[#7C7C7C]">CEO of A1 Pinnacle Apartment</p>
+            </div>
+
+
+
         </div>
 
         <div class="flex w-full items-center justify-between gap-6 mt-6">
@@ -81,7 +120,7 @@
             <div class="w-[40%] flex justify-end gap-4">
                 <div
                     class="bg-[#F1F2F3] swiper-button-prev-1 border border-[#C9CCCF] rounded-full h-14 w-14 flex items-center justify-center">
-                    <i class="ri-arrow-left-line text-xl text-[#1D1F21]"></i>
+                    <i class="ri-arrow-left-line text-xl text-white"></i>
                 </div>
 
                 <div
