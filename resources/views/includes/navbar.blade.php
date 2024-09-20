@@ -1,4 +1,4 @@
-<nav class="relative z-10 flex items-center justify-between py-7 md:px-24 px-5">
+<nav data-aos="fade-down" data-aos-duration="500" class="relative z-10 flex items-center justify-between py-7 md:px-24 px-5">
     <a href="/">
         <img src="{{ asset('images/people-advisor.svg') }}" alt="">
     </a>

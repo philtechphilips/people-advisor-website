@@ -1,6 +1,6 @@
 <section class="md:px-24 px-5 mb-10">
-    <h1 class="text-center font-bold text-5xl">See why our clients trust us</h1>
-    <div class="swiper">
+    <h1 data-aos="fade-down" data-aos-duration="500"  class="text-center font-bold text-5xl">See why our clients trust us</h1>
+    <div class="swiper" data-aos="fade-right" data-aos-duration="500">
         <div class="flex swiper-wrapper justify-between mt-16">
 
             <div
@@ -101,7 +101,7 @@
 
         </div>
 
-        <div class="flex w-full items-center justify-between gap-6 mt-6">
+        <div data-aos="fade-up" data-aos-duration="500" class="flex w-full items-center justify-between gap-6 mt-6">
             <!-- Swiper Scrollbar on the Left -->
             <div class="swiper-scrollbar  justify-start w-[60%]"></div>
 

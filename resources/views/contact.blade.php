@@ -146,6 +146,8 @@
                         toastr.success("Message submitted sucessfully!");
                         button.prop("disabled", false);
                         button.find('p').text("Send message");
+
+                        $('#send-a-message')[0].reset();
                     },
                     error: function(xhr, status, error) {
                         button.prop("disabled", false);

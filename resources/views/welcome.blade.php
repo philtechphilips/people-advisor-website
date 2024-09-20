@@ -22,7 +22,7 @@
             <h1 class="md:text-[80px] md:leading-[90px] text-4xl z-10 md:font-semibold font-bold text-center">your business
             </h1>
 
-            <p class="text-[#545861] z-10 text-xl md:w-[700px] text-center mt-4 font-medium">We deliver customized
+            <p data-aos="fade-up" data-aos-duration="500" class="text-[#545861] z-10 text-xl md:w-[700px] text-center mt-4 font-medium">We deliver customized
                 consulting services that elevate your business and help you navigate challenges with confidence</p>
         </div>
 
