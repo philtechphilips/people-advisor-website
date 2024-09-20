@@ -22,7 +22,8 @@
             <h1 class="md:text-[80px] md:leading-[90px] text-4xl z-10 md:font-semibold font-bold text-center">your business
             </h1>
 
-            <p data-aos="fade-up" data-aos-duration="500" class="text-[#545861] z-10 text-xl md:w-[700px] text-center mt-4 font-medium">We deliver customized
+            <p data-aos="fade-up" data-aos-duration="500"
+                class="text-[#545861] z-10 text-xl md:w-[700px] text-center mt-4 font-medium">We deliver customized
                 consulting services that elevate your business and help you navigate challenges with confidence</p>
         </div>
 
@@ -285,13 +286,13 @@
             class="2xl:text-5xl text-center md:text-left md:text-[42px] text-2xl text-[#191B1F] font-semibold md:leading-[50px] 2xl:leading-[60px] max-w-[500px]">
             We offer several services to meet your needs
         </h1>
-        <div class="flex md:flex-row flex-col mt-6 items-center justify-between">
+        <div class="flex md:flex-row z-10 relative flex-col mt-6 items-center justify-between">
             <p class="text-[#7C7C7C] text-xl md:w-[651px] text-center md:text-left">
                 Comprehensive consulting services designed to elevate your business operations and drive sustainable growth
             </p>
 
             <a href="/services"
-                class="text-white bg-[#075097] mt-5 md:mt-0 hover:bg-[#191B1F] rounded-[32px] gap-6 flex items-center px-6 pr-4 py-2 w-fit button">
+                class="text-white z-10 relative bg-[#075097] mt-5 md:mt-0 hover:bg-[#191B1F] rounded-[32px] gap-6 flex items-center px-6 pr-4 py-2 w-fit button">
                 <p class="text-lg">Explore our services</p>
                 <div class="icon-container rounded-full w-10 h-10 flex items-center justify-center">
                     <i class="ri-arrow-right-up-line text-2xl icon"></i>
@@ -299,9 +300,9 @@
             </a>
         </div>
 
-        <div class="pt-28">
+        <div class="relative pt-28 z-10">
             <div
-                class="flex md:flex-row flex-col cursor-pointer hover:bg-[#F16823] rounded-lg items-center justify-between md:px-4 md:py-6 2xl:px-8 2xl:py-12 mb-8 hover-parent">
+                class="flex md:flex-row flex-col z-10 cursor-pointer hover:bg-[#F16823] rounded-lg items-center justify-between md:px-4 md:py-6 2xl:px-8 2xl:py-12 mb-8 hover-parent">
                 <h1 class="text-[#191B1F] font-bold text-2xl text-center md:text-left md:w-[400px]">01. Human Resources
                     Consulting</h1>
 
@@ -404,7 +405,7 @@
     {{-- CTA --}}
 
 
-    <section class="md:px-24 px-5  pb-28">
+    <section class="md:px-24 px-5 z-10 relative  pb-28">
         <div class="flex md:flex-row flex-col mt-6 items-center justify-between md:mb-20 mb-16">
             <h1
                 class="2xl:text-5xl text-center md:text-left md:text-[42px] text-2xl text-[#191B1F] font-semibold md:leading-[50px] 2xl:leading-[60px]">

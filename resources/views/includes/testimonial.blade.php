@@ -51,7 +51,7 @@
                     above and beyond to meet our needs. Their comprehensive consulting services have made a significant
                     impact on our business, and we couldn't be more pleased with the results</p>
 
-                <h6 class="text-[#191B1F] font-bold">Adebowala Idris</h6>
+                <h6 class="text-[#191B1F] font-bold">Idris Adeniji</h6>
                 <p class="text-[#7C7C7C]">Executive director Xttreme</p>
             </div>
 

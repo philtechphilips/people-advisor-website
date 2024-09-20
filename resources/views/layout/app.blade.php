@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>People Advisor - General Consulting Company </title>
+    <meta name="description"
+        content="We deliver customized consulting services that elevate your business and help you navigate challenges with confidence.">
+    <meta name="keywords"
+        content="general consulting, business consulting, HR solutions, organizational development, business strategy, performance optimization, growth management, People Advisor, consulting services, Human Resources Consulting, social media advisory, accounting advisory, growth, growth advisory">
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> --}}
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
@@ -19,22 +23,24 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
 
 </head>
 
 
-<body>
-    @yield('content')
+<body class="flex w-full justify-center">
+    <main class="2xl:w-[1440px] w-full">
+        @yield('content')
 
-    @include('includes.footer')
+        @include('includes.footer')
+    </main>
 
-
+  
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        once: true,
-      });
+        AOS.init({
+            once: true,
+        });
     </script>
 
     {{-- Swiper JS --}}

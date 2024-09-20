@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <section class="w-full md:h-[600px] h-[500px] mb-10  relative overflow-hidden">
+    <section class="w-full z-10 md:h-[600px] h-[500px] mb-10  relative overflow-hidden">
         @include('includes.navbar')
 
         <div class="relative z-10 flex flex-col items-center justify-center md:h-[600px] h-[500px]">
@@ -22,7 +22,7 @@
     </section>
 
 
-    <section class="w-full md:px-24 px-5 pb-24">
+    <section class="w-full z-10 md:px-24 px-5 pb-24">
         <h6 class="text-lg font-medium text-[#161616] mb-12">General Information</h6>
 
         <div class="faq-container mb-16">
