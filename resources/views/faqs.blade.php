@@ -14,6 +14,11 @@
                 services
             </p>
         </div>
+
+        <div class="absolute hidden z-0 md:block top-0 left-0 w-full ">
+            <img id="faqAnimated" class="fade-in z-0 w-full" src="{{ asset('images/bg-1.png') }}" alt=""
+                style="transition: opacity 1s;">
+        </div>
     </section>
 
 
@@ -285,4 +290,30 @@
     {{-- Testimonial --}}
     @include('includes.testimonial')
     {{-- Testimonial --}}
+@endsection()
+
+
+@section("script")
+<script>
+    const serviceImages = [
+        "{{ asset('images/bg-1.png') }}",
+        "{{ asset('images/bg-2.png') }}",
+        "{{ asset('images/bg-3.png') }}",
+        "{{ asset('images/bg-4.png') }}",
+        "{{ asset('images/bg-5.png') }}"
+    ];
+    let serviceIndex = 0;
+    const serviceAnimatedImage = document.getElementById('faqAnimated');
+
+    function switchServiceImage() {
+        serviceAnimatedImage.style.opacity = 0; 
+        setTimeout(() => {
+            serviceIndex = (serviceIndex + 1) % serviceImages.length; 
+            serviceAnimatedImage.src = serviceImages[serviceIndex]; 
+            serviceAnimatedImage.style.opacity = .5; 
+        }, 1000); 
+    }
+
+    setInterval(switchServiceImage, 4000); 
+</script>
 @endsection()

@@ -19,7 +19,7 @@
         </li>
     </ul>
 
-    <a href="/contact-us" class="bg-[#075097] hidden md:block text-white rounded-[32px] py-2 px-6">Consult us</a>
+    <a href="/contact-us" class="bg-[#075097] hidden md:block text-white w-[129px] h-[43px] rounded-[32px] py-2 px-6 hover:border-2 hover:bg-[#0962B9] hover:border-white">Consult us</a>
     <i class="ri-menu-2-line text-[28px] flex md:hidden menuButton"></i>
 </nav>
 

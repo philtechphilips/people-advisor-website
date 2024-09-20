@@ -24,7 +24,7 @@
 
     </section>
 
-    <section class="w-full md:px-24 px-5 flex flex-col gap-6 py-24">
+    <section class="w-full relative md:px-24 px-5 flex flex-col gap-6 py-24">
         <h1 class="text-[#191B1F] md:text-5xl text-2xl text-center md:text-left font-bold">We offer several services to meet
             your needs</h1>
 
@@ -56,9 +56,13 @@
         </div>
 
         <div class="border border-[#C3C4CB] mt-10"></div>
+        <div class="absolute hidden z-0 md:block top-0 left-0 w-full ">
+            <img id="serviceAnimateds" class="fade-in z-0 w-full" src="{{ asset('images/bg-1.png') }}" alt=""
+                style="transition: opacity 1s;">
+        </div>
     </section>
 
-    <section class="w-full md:px-24 px-5 flex flex-col gap-6 pb-24">
+    <section class="w-full relative md:px-24 px-5 flex flex-col gap-6 pb-24">
         <h1 class="font-bold text-[32px] w-fit"
             style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             Human Resources Consulting
@@ -162,7 +166,7 @@
         <div class="border border-[#C3C4CB] mt-10"></div>
     </section>
 
-    <section class="w-full md:px-24 px-5 flex flex-col gap-6 pb-24">
+    <section class="w-full relative md:px-24 px-5 flex flex-col gap-6 pb-24">
         <h1 class="font-bold text-[32px] w-fit"
             style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             Social Media Advisory
@@ -277,7 +281,7 @@
         <div class="border border-[#C3C4CB] mt-10"></div>
     </section>
 
-    <section class="w-full md:px-24 px-5 flex flex-col gap-6 pb-24">
+    <section class="w-full relative md:px-24 px-5 flex flex-col gap-6 pb-24">
         <h1 class="font-bold text-[32px] w-fit"
             style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             Accounting Advisory
@@ -426,7 +430,7 @@
         <div class="border border-[#C3C4CB] mt-10"></div>
     </section>
 
-    <section class="w-full md:px-24 px-5 flex flex-col gap-6 pb-24">
+    <section class="w-full relative md:px-24 px-5 flex flex-col gap-6 pb-24">
         <h1 class="font-bold text-[32px] w-fit"
             style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             Product Development Advisory
@@ -512,7 +516,7 @@
         <div class="border border-[#C3C4CB] mt-10"></div>
     </section>
 
-    <section class="w-full md:px-24 px-5 flex flex-col gap-6 pb-24">
+    <section class="w-full relative md:px-24 px-5 flex flex-col gap-6 pb-24">
         <h1 class="font-bold text-[32px] w-fit"
             style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             Growth Advisory
@@ -619,4 +623,30 @@
     {{-- Testiomonial --}}
     @include('includes.testimonial')
     {{-- Testiomonial --}}
+@endsection()
+
+
+@section('script')
+    <script>
+        const serviceImages = [
+            "{{ asset('images/bg-1.png') }}",
+            "{{ asset('images/bg-2.png') }}",
+            "{{ asset('images/bg-3.png') }}",
+            "{{ asset('images/bg-4.png') }}",
+            "{{ asset('images/bg-5.png') }}"
+        ];
+        let serviceIndex = 0;
+        const serviceAnimatedImage = document.getElementById('serviceAnimateds');
+
+        function switchServiceImage() {
+            serviceAnimatedImage.style.opacity = 0;
+            setTimeout(() => {
+                serviceIndex = (serviceIndex + 1) % serviceImages.length;
+                serviceAnimatedImage.src = serviceImages[serviceIndex];
+                serviceAnimatedImage.style.opacity = .5;
+            }, 1000);
+        }
+
+        setInterval(switchServiceImage, 4000);
+    </script>
 @endsection()

@@ -1,14 +1,14 @@
 @extends('layout.app')
 
 @section('content')
-    <section class="w-full md:h-[800px] h-[700px]  relative overflow-hidden">
+    <section class="w-full md:h-[800px] h-[700px] relative overflow-hidden">
         @include('includes.navbar')
 
         <div class="absolute inset-0 bg-cover bg-center z-0"
             style="background-image: url('{{ asset('images/peoples-advisor-hero-bg.png') }}'); filter: blur(20px);">
         </div>
 
-        <div class="relative z-10 flex flex-col items-center justify-center  md:h-[700px] h-[500px]">
+        <div class="relative z-10 flex flex-col items-center justify-center md:h-[700px] h-[500px]">
             <h1 class="md:text-[80px] text-4xl md:leading-[90px] pb-1 text-center md:font-semibold font-bold"
                 style="
         background: linear-gradient(102.69deg, #F5F5F5 -55.44%, #94ACC4 -0.54%, #075097 108.46%);
@@ -17,17 +17,17 @@
       ">
                 Consulting solutions
             </h1>
-            <h1 class="md:text-[80px] md:leading-[90px] text-4xl z-10  md:font-semibold font-bold pb-1 text-center">for every
+            <h1 class="md:text-[80px] md:leading-[90px] text-4xl z-10 md:font-semibold font-bold pb-1 text-center">for every
                 aspect of</h1>
-            <h1 class="md:text-[80px] md:leading-[90px] text-4xl z-10  md:font-semibold font-bold text-center">your business
+            <h1 class="md:text-[80px] md:leading-[90px] text-4xl z-10 md:font-semibold font-bold text-center">your business
             </h1>
 
-            <p class="text-[#545861] z-10 text-xl  md:w-[700px] text-center mt-4 font-medium">We deliver customized
+            <p class="text-[#545861] z-10 text-xl md:w-[700px] text-center mt-4 font-medium">We deliver customized
                 consulting services that elevate your business and help you navigate challenges with confidence</p>
         </div>
 
         <div class="absolute hidden z-0 md:block bottom-0 left-0 w-full h-[800px]">
-            <img id="animatedImage" class="fade-in z-0 w-full h-[800px]" src="{{ asset('images/Name=01.png') }}"
+            <img id="animatedImage" class="fade-in z-0 w-full h-[800px]" src="{{ asset('images/Name=05.png') }}"
                 alt="" style="transition: opacity 1s;">
         </div>
     </section>
@@ -228,7 +228,7 @@
                 client-centric approach, we
                 stand out as trusted partners in your journey toward growth and excellence.</p>
 
-            <a href="#"
+            <a href="/about-us"
                 class="text-white bg-[#075097] mt-5 md:mt-0 hover:bg-[#191B1F] rounded-[32px] gap-6 flex items-center px-6 pr-4 py-2 w-fit button">
                 <p class="text-lg">Know more</p>
                 <div class="icon-container rounded-full w-10 h-10 flex items-center justify-center">
@@ -280,7 +280,7 @@
         </div>
     </section>
 
-    <section class="md:px-24 px-5 bg-gray-50 py-28">
+    <section class="md:px-24 relative px-5 bg-gray-50 py-28">
         <h1
             class="2xl:text-5xl text-center md:text-left md:text-[42px] text-2xl text-[#191B1F] font-semibold md:leading-[50px] 2xl:leading-[60px] max-w-[500px]">
             We offer several services to meet your needs
@@ -290,7 +290,7 @@
                 Comprehensive consulting services designed to elevate your business operations and drive sustainable growth
             </p>
 
-            <a href="#"
+            <a href="/services"
                 class="text-white bg-[#075097] mt-5 md:mt-0 hover:bg-[#191B1F] rounded-[32px] gap-6 flex items-center px-6 pr-4 py-2 w-fit button">
                 <p class="text-lg">Explore our services</p>
                 <div class="icon-container rounded-full w-10 h-10 flex items-center justify-center">
@@ -391,6 +391,11 @@
                 </a>
             </div>
         </div>
+
+        <div class="absolute hidden z-0 md:block top-0 left-0 w-full ">
+            <img id="serviceAnimated" class="fade-in z-0 w-full" src="{{ asset('images/bg-1.png') }}" alt=""
+                style="transition: opacity 1s;">
+        </div>
     </section>
 
 
@@ -406,7 +411,7 @@
                 Frequently asked questions
             </h1>
 
-            <a href="#"
+            <a href="/faqs"
                 class="text-white bg-[#075097] mt-5 md:mt-0 hover:bg-[#191B1F] rounded-[32px] gap-6 flex items-center px-6 pr-4 py-2 w-fit button">
                 <p class="text-lg">Learn more</p>
                 <div class="icon-container rounded-full w-10 h-10 flex items-center justify-center">
@@ -492,33 +497,56 @@
     {{-- Testiomonial --}}
     @include('includes.testimonial')
     {{-- Testiomonial --}}
-
-
 @endsection
 
 @section('script')
     <script>
-        const img = document.getElementById('animatedImage');
-        let imgIndex = 1;
-        const totalImages = 5;
-        const imgFolder = '{{ asset('images/') }}';
+        const images = [
+            // "{{ asset('images/Name=01.png') }}",
+            // "{{ asset('images/Name=02.png') }}",
+            "{{ asset('images/Name=03.png') }}",
+            "{{ asset('images/Name=04.png') }}",
+            "{{ asset('images/Name=05.png') }}"
+        ];
+        let currentIndex = 0;
+        const animatedImage = document.getElementById('animatedImage');
 
-        function animateImage() {
-            img.style.opacity = 1;
-
+        function switchImage() {
+            animatedImage.style.opacity = 0;
             setTimeout(() => {
-                imgIndex++;
-                if (imgIndex > totalImages) {
-                    imgIndex = 1;
-                }
-
-                img.src = `${imgFolder}/Name=0${imgIndex}.png`;
-
-                img.style.opacity = 0.1;
-            }, 5000);
+                currentIndex = (currentIndex + 1) % images.length;
+                animatedImage.src = images[currentIndex];
+                animatedImage.style.opacity = .5;
+            }, 1000);
         }
-        setInterval(animateImage, 6000);
+
+        setInterval(switchImage, 4000);
     </script>
+
+
+    <script>
+        const serviceImages = [
+            "{{ asset('images/bg-1.png') }}",
+            "{{ asset('images/bg-2.png') }}",
+            "{{ asset('images/bg-3.png') }}",
+            "{{ asset('images/bg-4.png') }}",
+            "{{ asset('images/bg-5.png') }}"
+        ];
+        let serviceIndex = 0;
+        const serviceAnimatedImage = document.getElementById('serviceAnimated');
+
+        function switchServiceImage() {
+            serviceAnimatedImage.style.opacity = 0; 
+            setTimeout(() => {
+                serviceIndex = (serviceIndex + 1) % serviceImages.length; 
+                serviceAnimatedImage.src = serviceImages[serviceIndex]; 
+                serviceAnimatedImage.style.opacity = 1; 
+            }, 1000); 
+        }
+
+        setInterval(switchServiceImage, 4000); 
+    </script>
+
 
     <script>
         const hoverContainers = document.querySelectorAll('.hover-parent');
@@ -537,6 +565,4 @@
             });
         });
     </script>
-
-
 @endsection

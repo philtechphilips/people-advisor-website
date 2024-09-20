@@ -59,17 +59,13 @@
                 class="md:w-[373px] 2xl:w-[400px] md:h-[380px] border border-[#54586180] rounded-[32px] py-10 px-6 swiper-slide">
                 <h4 class="w-fit text-xl font-bold"
                     style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;">
-                    “Transformational HR Solutions”</h4>
-                <p class="text-[#7C7C7C] mt-2 mb-4">Partnering with People Advisor has been a game-changer for our
-                    company.
-                    Their HR consulting services have streamlined our payroll management and enhanced our employee
-                    engagement strategies. Their team is knowledgeable, responsive, and truly understands our business
-                    needs
+    -webkit-text-fill-color: transparent;">"Reliable Accounting Services"</h4>
+                <p class="text-[#7C7C7C] mt-2 mb-4">
+                    People Advisor has been an invaluable partner in managing our financial operations. Their accounting advisory services have provided us with clear financial insights, helping us make informed decisions and improve our financial performance.
                 </p>
 
-                <h6 class="text-[#191B1F] font-bold">Tunde Oladimeji</h6>
-                <p class="text-[#7C7C7C]">CEO of A1 Pinnacle Apartment</p>
+                <h6 class="text-[#191B1F] font-bold">Habeeb A.</h6>
+                <p class="text-[#7C7C7C]">Head of Accounting Crescendo Sport Lounge</p>
             </div>
 
 
@@ -78,16 +74,13 @@
                 <h4 class="w-fit text-xl font-bold"
                     style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;">
-                    “Transformational HR Solutions”</h4>
-                <p class="text-[#7C7C7C] mt-2 mb-4">Partnering with People Advisor has been a game-changer for our
-                    company.
-                    Their HR consulting services have streamlined our payroll management and enhanced our employee
-                    engagement strategies. Their team is knowledgeable, responsive, and truly understands our business
-                    needs
+                    "Product Development Guidance"</h4>
+                <p class="text-[#7C7C7C] mt-2 mb-4">
+                    The product development advisory services we received from People Advisor were top-notch. Their expertise in market research and product strategy helped us launch a successful new product that exceeded our sales targets. Their team is a pleasure to work with.
                 </p>
 
-                <h6 class="text-[#191B1F] font-bold">Tunde Oladimeji</h6>
-                <p class="text-[#7C7C7C]">CEO of A1 Pinnacle Apartment</p>
+                <h6 class="text-[#191B1F] font-bold">Yewande Abiodun</h6>
+                <p class="text-[#7C7C7C]">Operations Manager at RST Industries</p>
             </div>
 
 
@@ -95,17 +88,13 @@
                 class="md:w-[373px] 2xl:w-[400px] md:h-[380px] border border-[#54586180] rounded-[32px] py-10 px-6 swiper-slide">
                 <h4 class="w-fit text-xl font-bold"
                     style="background: linear-gradient(142.53deg, #075097 41.81%, #F16823 74.05%); -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;">
-                    “Transformational HR Solutions”</h4>
-                <p class="text-[#7C7C7C] mt-2 mb-4">Partnering with People Advisor has been a game-changer for our
-                    company.
-                    Their HR consulting services have streamlined our payroll management and enhanced our employee
-                    engagement strategies. Their team is knowledgeable, responsive, and truly understands our business
-                    needs
+    -webkit-text-fill-color: transparent;">"Growth Strategies"</h4>
+                <p class="text-[#7C7C7C] mt-2 mb-4">
+                    Thanks to People Advisor's growth advisory services, our company has experienced rapid growth. Their insights into market trends and operational efficiency have been instrumental in our expansion. We highly recommend their services to any business looking to scale.
                 </p>
 
-                <h6 class="text-[#191B1F] font-bold">Tunde Oladimeji</h6>
-                <p class="text-[#7C7C7C]">CEO of A1 Pinnacle Apartment</p>
+                <h6 class="text-[#191B1F] font-bold">Ummi Rabiu</h6>
+                <p class="text-[#7C7C7C]">Founder of OPQ Startups</p>
             </div>
 
 

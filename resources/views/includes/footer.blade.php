@@ -5,8 +5,8 @@
         <p class="pt-5 text-[#7c7c7c] text-lg text-center">Partner with us today to achieve your business goals
             effectively</p>
 
-        <div class="bg-[#075097] mt-8 w-fit text-white px-5 py-3 rounded-[32px]">
-            <a href="#" class="text-lg font-medium">Consult us now</a>
+        <div class="bg-[#075097] hover:!bg-[#0962B9] mt-8 w-fit text-white px-5 py-3 rounded-[32px]">
+            <a href="/contact-us" class="text-lg font-medium">Consult us now</a>
         </div>
     </div>
 </section>
@@ -18,10 +18,10 @@
             capitalize on opportunities</h1>
         <p class="text-[#F7F7F7] pt-5 text-xl">Partner with us today to achieve your business goals effectively</p>
 
-        <div
-            class="bg-[#075097] w-fit absolute 2xl:bottom-[28px] 2xl:right-[130px]  md:bottom-[54px] md:right-[100px] text-white px-5 py-3 rounded-[32px]">
-            <a href="#" class="text-lg font-medium">Consult us now</a>
-        </div>
+        <a href="/contact-us"
+            class="bg-[#075097] hover:!bg-[#0962B9]  w-fit absolute 2xl:bottom-[28px] 2xl:right-[130px]  md:bottom-[54px] md:right-[100px] text-white px-5 py-3 rounded-[32px]">
+            <p class="text-lg font-medium">Consult us now</p>
+        </a>
     </div>
 </section>
 
