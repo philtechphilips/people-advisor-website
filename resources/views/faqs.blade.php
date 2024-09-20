@@ -104,8 +104,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        We offer a comprehensive range of HR services, including HR consulting, recruitment, talent
-                        management, benefits administration, and compliance support.
+                        Our accounting advisory services include financial planning, budgeting, auditing, financial
+                        reporting, and tax consulting.
                     </p>
                 </div>
             </div>
@@ -120,8 +120,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        Our HR expertise is designed to optimize your HR functions, enhance employee engagement, and
-                        mitigate potential risks, contributing to overall business success.
+                        We help you manage your finances effectively, ensure compliance with regulations, and make informed
+                        decisions to drive business growth.
                     </p>
                 </div>
             </div>
@@ -139,8 +139,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        We offer a comprehensive range of HR services, including HR consulting, recruitment, talent
-                        management, benefits administration, and compliance support.
+                        Our growth advisory services encompass strategic planning, market research, competitive analysis,
+                        and the development of growth strategies
                     </p>
                 </div>
             </div>
@@ -155,8 +155,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        Our HR expertise is designed to optimize your HR functions, enhance employee engagement, and
-                        mitigate potential risks, contributing to overall business success.
+                        Our expertise enables you to identify growth opportunities, formulate strategies, and achieve
+                        long-term success.
                     </p>
                 </div>
             </div>
@@ -174,8 +174,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        We offer a comprehensive range of HR services, including HR consulting, recruitment, talent
-                        management, benefits administration, and compliance support.
+                        We provide comprehensive product advisory services, including product development, launch planning,
+                        product positioning, and life cycle management.
                     </p>
                 </div>
             </div>
@@ -190,8 +190,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        Our HR expertise is designed to optimize your HR functions, enhance employee engagement, and
-                        mitigate potential risks, contributing to overall business success.
+                        We assist in creating and launching successful products that align with market demands, ensuring
+                        that your product offerings are competitive and well-received.
                     </p>
                 </div>
             </div>
@@ -209,8 +209,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        We offer a comprehensive range of HR services, including HR consulting, recruitment, talent
-                        management, benefits administration, and compliance support.
+                        Our social media advisory services include strategy development, content creation, social media
+                        management, and analytics.
                     </p>
                 </div>
             </div>
@@ -225,8 +225,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        Our HR expertise is designed to optimize your HR functions, enhance employee engagement, and
-                        mitigate potential risks, contributing to overall business success.
+                        Our services help you build a strong online presence, engage with your target audience effectively,
+                        and achieve tangible business results through social media.
                     </p>
                 </div>
             </div>
@@ -245,8 +245,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        We offer a comprehensive range of HR services, including HR consulting, recruitment, talent
-                        management, benefits administration, and compliance support.
+                        Getting started is simple—just contact us to schedule a consultation where we can discuss your
+                        business needs and tailor our services accordingly.
                     </p>
                 </div>
             </div>
@@ -260,8 +260,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        Our HR expertise is designed to optimize your HR functions, enhance employee engagement, and
-                        mitigate potential risks, contributing to overall business success.
+                        We collaborate closely with our clients to thoroughly understand their needs, develop customized
+                        solutions, and implement strategies that drive success.
                     </p>
                 </div>
             </div>
@@ -279,8 +279,8 @@
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
                     <p class="text-[#7c7c7c]">
-                        We offer a comprehensive range of HR services, including HR consulting, recruitment, talent
-                        management, benefits administration, and compliance support.
+                        Our pricing structure is tailored to the specific service, scope, and duration of each project.
+                        Please contact us to receive a custom quote that meets your needs.
                     </p>
                 </div>
             </div>
@@ -293,27 +293,27 @@
 @endsection()
 
 
-@section("script")
-<script>
-    const serviceImages = [
-        "{{ asset('images/bg-1.png') }}",
-        "{{ asset('images/bg-2.png') }}",
-        "{{ asset('images/bg-3.png') }}",
-        "{{ asset('images/bg-4.png') }}",
-        "{{ asset('images/bg-5.png') }}"
-    ];
-    let serviceIndex = 0;
-    const serviceAnimatedImage = document.getElementById('faqAnimated');
+@section('script')
+    <script>
+        const serviceImages = [
+            "{{ asset('images/bg-1.png') }}",
+            "{{ asset('images/bg-2.png') }}",
+            "{{ asset('images/bg-3.png') }}",
+            "{{ asset('images/bg-4.png') }}",
+            "{{ asset('images/bg-5.png') }}"
+        ];
+        let serviceIndex = 0;
+        const serviceAnimatedImage = document.getElementById('faqAnimated');
 
-    function switchServiceImage() {
-        serviceAnimatedImage.style.opacity = 0; 
-        setTimeout(() => {
-            serviceIndex = (serviceIndex + 1) % serviceImages.length; 
-            serviceAnimatedImage.src = serviceImages[serviceIndex]; 
-            serviceAnimatedImage.style.opacity = .5; 
-        }, 1000); 
-    }
+        function switchServiceImage() {
+            serviceAnimatedImage.style.opacity = 0;
+            setTimeout(() => {
+                serviceIndex = (serviceIndex + 1) % serviceImages.length;
+                serviceAnimatedImage.src = serviceImages[serviceIndex];
+                serviceAnimatedImage.style.opacity = .5;
+            }, 1000);
+        }
 
-    setInterval(switchServiceImage, 4000); 
-</script>
+        setInterval(switchServiceImage, 4000);
+    </script>
 @endsection()

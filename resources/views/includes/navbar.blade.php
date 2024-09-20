@@ -1,5 +1,7 @@
 <nav class="relative z-10 flex items-center justify-between py-7 md:px-24 px-5">
-    <img src="{{ asset('images/people-advisor.svg') }}" alt="">
+    <a href="/">
+        <img src="{{ asset('images/people-advisor.svg') }}" alt="">
+    </a>
 
     <ul style="box-shadow: -4px 4px 6px 0px #C6C6C64D;" class="md:flex hidden items-center gap-7 text-[#191B1F] text-lg font-medium bg-white py-3 px-6 rounded-[32px]">
         <li class="menu-item">

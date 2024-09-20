@@ -429,9 +429,10 @@
                     </div>
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
-                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
-                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
-                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                    <p class="text-[#7c7c7c]">
+                        Our company specializes in providing advisory services across several key areas, including Human
+                        Resources, Accounting, Growth Strategy, Product Development, and Social Media Management.
+                    </p>
                 </div>
             </div>
 
@@ -443,9 +444,10 @@
                     </div>
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
-                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
-                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
-                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                    <p class="text-[#7c7c7c]">
+                        We are distinguished by our team of seasoned experts who bring diverse experience and specialized
+                        knowledge, enabling us to help businesses tackle complex challenges and achieve sustainable growth.
+                    </p>
                 </div>
             </div>
 
@@ -457,9 +459,10 @@
                     </div>
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
-                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
-                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
-                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                    <p class="text-[#7c7c7c]">
+                        Getting started is simple—just contact us to schedule a consultation where we can discuss your
+                        business needs and tailor our services accordingly.
+                    </p>
                 </div>
             </div>
 
@@ -471,9 +474,10 @@
                     </div>
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
-                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
-                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
-                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                    <p class="text-[#7c7c7c]">
+                        We collaborate closely with our clients to thoroughly understand their needs, develop customized
+                        solutions, and implement strategies that drive success.
+                    </p>
                 </div>
             </div>
 
@@ -485,9 +489,10 @@
                     </div>
                 </div>
                 <div class="faq-content md:pr-20 pr-2 mt-2 hidden">
-                    <p class="text-[#7c7c7c]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam cumque
-                        quis impedit, fugiat rerum doloribus cum cupiditate autem reiciendis a eum molestiae dignissimos
-                        delectus vero consectetur iusto? Vero, aperiam.</p>
+                    <p class="text-[#7c7c7c]">
+                        Our pricing structure is tailored to the specific service, scope, and duration of each project.
+                        Please contact us to receive a custom quote that meets your needs.
+                    </p>
                 </div>
             </div>
         </div>
@@ -536,15 +541,15 @@
         const serviceAnimatedImage = document.getElementById('serviceAnimated');
 
         function switchServiceImage() {
-            serviceAnimatedImage.style.opacity = 0; 
+            serviceAnimatedImage.style.opacity = 0;
             setTimeout(() => {
-                serviceIndex = (serviceIndex + 1) % serviceImages.length; 
-                serviceAnimatedImage.src = serviceImages[serviceIndex]; 
-                serviceAnimatedImage.style.opacity = 1; 
-            }, 1000); 
+                serviceIndex = (serviceIndex + 1) % serviceImages.length;
+                serviceAnimatedImage.src = serviceImages[serviceIndex];
+                serviceAnimatedImage.style.opacity = 1;
+            }, 1000);
         }
 
-        setInterval(switchServiceImage, 4000); 
+        setInterval(switchServiceImage, 4000);
     </script>
 
 
