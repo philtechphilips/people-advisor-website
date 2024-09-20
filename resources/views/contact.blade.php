@@ -163,7 +163,6 @@
         });
     </script>
 
-
     <script>
         const serviceImages = [
             "{{ asset('images/bg-1.png') }}",
